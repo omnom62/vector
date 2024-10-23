@@ -8,9 +8,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: A job to run test in FreeBSD
-    env:
-      MYTOKEN : ${{ secrets.MYTOKEN }}
-      MYTOKEN2: "value2"
+    # env:
+    #   MYTOKEN : ${{ secrets.MYTOKEN }}
+    #   MYTOKEN2: "value2"
     steps:
     - uses: actions/checkout@v4
     - name: Test in FreeBSD
