@@ -22,7 +22,6 @@ jobs:
         usesh: true
         prepare: |
           pkg install -y curl protobuf gmake rust libgsasl openssl git
-          git config --global http.sslVerify false
 
         run: |
           pwd
