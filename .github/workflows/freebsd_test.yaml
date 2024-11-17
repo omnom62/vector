@@ -24,14 +24,7 @@ jobs:
 
         run: |
           pwd
-          ls -lah
-          whoami
-          env
-          freebsd-version
-          sysctl hw.model
-          sysctl hw.ncpu
-          sysctl hw.physmem
-          sysctl hw.usermem
+          cargo build
 
 
 
