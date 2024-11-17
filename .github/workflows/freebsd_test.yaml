@@ -21,7 +21,7 @@ jobs:
         release: '13.4'
         usesh: true
         prepare: |
-          pkg install -y curl protobuf gmake rust libgsasl openssl
+          pkg install -y curl protobuf gmake rust libgsasl openssl git
           git config --global http.sslVerify false
 
         run: |
