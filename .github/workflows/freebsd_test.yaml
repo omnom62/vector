@@ -20,7 +20,7 @@ jobs:
         envs: 'MYTOKEN MYTOKEN2'
         usesh: true
         prepare: |
-          pkg install -y curl protobuf gmake rust libgsasl openssl
+          pkg install -y curl protobuf gmake rust libgsasl openssl-3.0.14
 
         run: |
           pwd
