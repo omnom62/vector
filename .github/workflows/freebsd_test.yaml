@@ -18,9 +18,10 @@ jobs:
       uses: vmactions/freebsd-vm@v1
       with:
         envs: 'MYTOKEN MYTOKEN2'
+        release: '13.2'
         usesh: true
         prepare: |
-          pkg install -y curl protobuf gmake rust libgsasl openssl-3.0.14
+          pkg install -y curl protobuf gmake rust libgsasl openssl
 
         run: |
           pwd
