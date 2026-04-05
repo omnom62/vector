@@ -1,0 +1,12 @@
+name: Cross Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-freebsd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print hello
+        run: echo "Hello FreeBSD"
